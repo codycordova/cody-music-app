@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# <p align="center"><img src="public/logo/cclogo.png" width="120" alt="CODY Logo"><br>🎵 CODY Music App</p>
 
-## Getting Started
+The **CODY Music App** is an interactive web music player built by **Cody Cordova**, blending art, technology, and music into one immersive experience.  
+It allows users to stream original tracks, visualize their soundwaves, and experience the creative world of CODY in a sleek, modern UI.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🎧 **15-Track Playlist** – Browse and play any of Cody’s songs in sequence or individually.
+- 🌀 **Waveform Visualizer** – Smooth, dynamic audio visualization powered by [WaveSurfer.js](https://wavesurfer-js.org/).
+- 🔁 **Auto-Play & Skip Logic** – Seamlessly moves to the next track after finishing or skipping.
+- 🖼️ **Stylized UI/UX** – Inspired by vaporwave, neon, and luxury minimalism aesthetics.
+- 🔊 **Responsive Audio Controls** – Play, pause, skip, and seek directly in the waveform.
+- 🧠 **Smart Instance Management** – Ensures only one audio stream plays at a time.
+- 💿 **Media Integration** – Includes looping DJ video, main artist imagery, and reactive captions.
+
+---
+
+## 🧩 Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| **Next.js 15** | Frontend framework for fast and modular development |
+| **React 19** | Component-based UI structure |
+| **WaveSurfer.js** | Audio waveform visualizer and player |
+| **CSS (Custom)** | Custom styled components for unique brand visuals |
+| **TypeScript** | Strongly typed logic for better reliability |
+
+---
+
+## 📁 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cody-music-app/
+├── public/
+│   ├── music/                # All 15 MP3 tracks (song1.mp3 → song15.mp3)
+│   ├── images/               # Artist images (DJ, portrait, etc.)
+│   ├── media/                # Video clips (e.g., codytokendj.mp4)
+│   └── logo/                 # Logo assets (cclogo.png)
+│
+├── src/
+│   ├── app/
+│   │   ├── page.tsx          # Main page layout
+│   │   └── globals.css       # Global styling and color scheme
+│   └── components/
+│       ├── AudioPlayer.tsx   # Core music player logic and layout
+│       └── WaveSurferPlayer.tsx # Waveform player using WaveSurfer.js
+│
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🧠 How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. When the app loads, the **first song** can be played manually using the “Play” button.
+2. Once you click **Skip** or a new track in the list, the next song automatically plays.
+3. Only **one waveform instance** is active at a time—so tracks never overlap.
+4. The UI adjusts for desktop and mobile, stacking sections vertically for clarity:
+    - 🎬 DJ Video
+    - 🔉 Waveform & Song List
+    - 🖼️ Main Artist Image
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Setup Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/cody-music-app.git
+cd cody-music-app
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-## Deploy on Vercel
+### 3. Run Development Server
+```bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Your app will be available at **http://localhost:3000**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🎨 Design Philosophy
+
+> “Music is emotion in motion. The CODY Music App transforms sound into sight — a journey through color, frequency, and feeling.”
+
+This project embraces a **Y2K / vaporwave / luxury minimal** aesthetic, with pastel gradients, glowing edges, and smooth layout transitions.  
+Each design element was built to represent **CODY’s artistry** — a fusion of digital energy and human rhythm.
+
+---
+
+## 🛠️ Future Enhancements
+
+- 🎚️ Volume and mute controls
+- ⏱️ Song progress timer
+- 💫 Animated transitions between tracks
+- 💬 Lyrics or mood-based captions
+- 🪙 $CODY Token integration for exclusive fan rewards
+
+---
+
+## 🧑‍🎤 About the Artist
+
+**Cody Cordova** is a Los Angeles–based music producer, DJ, and developer.  
+Through projects like **CODY Token** and the **CODY Music App**, he bridges blockchain technology, music, and interactive design to create a new world where fans and creators connect seamlessly.
+
+### Follow Cody’s Journey
+
+- 🌐 [Website](https://codytoken.com)
+- 🎧 [SoundCloud](https://soundcloud.com/)
+- 🪩 [Instagram](https://instagram.com/)
+- 💫 [X / Twitter](https://twitter.com/)
+
+---
+
+## 🧾 License
+
+This project is open-source under the **AGPL-3.0 License**.  
+Feel free to remix, learn, and build — with credit to the original creator, **Cody Cordova**.
+
+---
+
+**© 2025 Cody Cordova — All rights reserved.**
